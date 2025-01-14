@@ -1,0 +1,10 @@
+git config --global
+
+git init : 초기파일 생성
+git add : SA에 WD 변경사항 저장
+git commit -m : COMMOT 시점 지정(버전 기록)
+git reset : (이전 버전으로 돌아가기)
+
+--hard : WD(x) SA(x) Head(이동)
+--soft : WD(o) SA(o) Head(이동)
+--mixed : WD(o) SA(x) Head(이동)

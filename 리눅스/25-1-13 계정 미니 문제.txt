@@ -1,0 +1,24 @@
+----------------------------------------------------
+[미니 문제]
+----------------------------------------------------
+1. test10 계정 생성시 UID 값 1800 으로 지정
+useradd -u 1800 test10
+
+2. test20 계정 생성시 주그룹을 test10 으로 지정
+useradd -g test10 test20
+
+3. test30 계정 생성시 보조그룹 test10 추가
+useradd -G test10 test10
+
+4. test40 계정 생성시 홈디렉토리 경로를 /export/test40 으로 지정
+mkdir /export
+useradd -d /export/test40 test40
+
+5. test50 계정 생성시 스컬경로를 /skel2 로하고 test50홈디렉토리에 test50파일
+이 생성되도록 하세요
+cp -r /etc/ske1 /ske12
+touch /ske12/test50
+useradd -mk /ske12 test50
+
+6. test60 계정 생성시 쉘을 /bin/ksh 로 설정 
+useradd -s /bin/ksh test60
