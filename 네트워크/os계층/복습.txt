@@ -1,0 +1,21 @@
+
+
+4. 전송
+역할 : 종단간(송수신지사이, End-to-End) 데이터의 신뢰성 보장
+약속 : TCP/UDP
+장치 : L4 Swith(로드밸런서)
+
+3. 네트워크
+역할 : 경로탐색
+약속 : IP, ICMP, ARP, Routing Protocol
+장치 : 라우터(Router)
+
+2. 데이터 링크
+역할 : 장치간(Point-to-Point) 데이터 운송 방식
+약속 : LAN(이더넷) WAN(HDLC, PPP)
+장치 : L2 SWITCH
+
+1. 물리계층
+역할 : 장치간 물리적 연결
+약속 : 디지털 신호 전달
+장치 : 케이블, 리피터, 허브
