@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        div{
+            width: 400px;
+            height: 40px;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid black;
+        }
+        div:nth-child(1){
+            position: relative;
+            animation-name: moving2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        div:nth-child(2){
+            position: relative;
+            animation-name: moving1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div:nth-child(3){
+            position: relative;
+            animation-name: moving3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        @keyframes moving1{
+            from{left: 100vw;}
+            to{left: 0;}
+        }
+        @keyframes moving2{
+            from{top: 100vW;}
+            to{top: 0;}
+        }
+        @keyframes moving3{
+            from{transform: translate(100vw,100vw);}
+            to{transform: translate(0,0);}
+        }
+    </style>
+</head>
+<body>
+    <div>helloworld</div>
+    <div>helloworld</div>
+    <div>helloworld</div>
+</body>
+</html>

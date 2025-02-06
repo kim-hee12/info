@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .sitmenu{
+            padding: 20px;
+        }
+        .sitmenu>input[type="checkbox"]{
+            display: none;
+        }
+        .sitmenu>label{}
+        .sitmenu>label>span{
+            display: block;
+            width: 35px;
+            height: 2px;
+            background-color: gray;
+            margin: 8px;
+            transition: .5s;
+        }
+        .sitmenu>input[type="checkbox"]:checked+label>span:nth-child(1){
+             transform: translate(0px,10px)rotate(45deg);
+        }
+        .sitmenu>input[type="checkbox"]:checked+label>span:nth-child(2){
+            width: 0;
+            opacity: 0;
+        }
+        .sitmenu>input[type="checkbox"]:checked+label>span:nth-child(3){
+            transform: translate(0px,-10px)rotate(-45deg);
+        }
+        .sitmenu>.site-black{
+                width: 0;
+                height: 0;
+                border: 5px solid;
+                visibility: hidden;
+                transition: 0.3s;
+                margin-top: 25px;
+            }
+        .sitmenu>input[type="checkbox"]:checked~.site-black{
+            visibility: visible;
+            height: 500px;
+            width: 100%;
+            background-color: royalblue;
+        }    
+    </style>
+</head>
+<body>
+    <div class="sitmenu">
+        <input type="checkbox" id="chk">
+        <label for="chk">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="site-black">
+
+        </div>
+    </div>
+</body>
+</html>
