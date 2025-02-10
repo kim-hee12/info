@@ -1,0 +1,14 @@
+.main {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    background: #181818;
+    min-height: 100vh;
+}
+
+.content {
+    position: relative;
+    height: 100vh;
+    background: #3A342E;
+    color: #fff;
+}
