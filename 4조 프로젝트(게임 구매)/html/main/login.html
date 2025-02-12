@@ -1,0 +1,112 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <!-- link -->
+    <script src="js/link.js" defer></script>
+    <!-- css import -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-form{
+            height: 100%;
+        }
+        .id{
+            margin-bottom: 50px;
+            margin-top: 80px;
+        }
+        .password{
+            margin-bottom: 50px;
+        }
+        .log-in-btn{
+            margin-bottom: 50px;
+        }
+        .log-in-link-btn{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .a{
+            font-size: 4rem;
+            margin-bottom: 30px;
+            
+        }
+        .b{
+            margin-top: 50px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header 영역 -->
+        <div id="headerContainer">
+
+        </div>
+        <!-- main 영역 -->
+        <div class="main">
+            <div class="pagew">
+                <h1 class="a" style="color: white;">Log In</h1>
+                <hr style="color: goldenrod;">
+                <div class="login-form">
+                    <div class="id">
+                        <input type="text" placeholder="email.com" style="height: 65px; width: 100%;">
+                    </div>
+                    <div class="password">
+                        <input type="password" name="password" id="password" placeholder="비밀번호" 
+                        style="height: 65px; width: 100%;">
+                        <a href="" style="color: royalblue;">비밀번호를 잊어버리셨나요?</a>
+                    </div>
+                    <div class="log-in-btn">
+                        <input type="button" value="Log In" 
+                        style="height: 65px;
+                         width: 100%;
+                         background-color: royalblue;
+                         color: white;
+                         border-color: dodgerblue;" >
+                    </div>
+                    <hr style="color: goldenrod;">
+                    <div class="log-in-link-btn">
+                        <input type="button" value="구글로 로그인" 
+                        style="height: 65px;
+                         width: 610px; 
+                         border-color: blue;
+                         background-color: black;
+                         color: blue;">
+                        <input type="button" value="카카오로 로그인" 
+                        style="height: 65px; 
+                        width: 610px; 
+                        border-color: yellow;
+                        background-color: black;
+                        color: yellow;">
+                    </div>
+                    <div class="b">
+                        <a href="" style="color: rgba(255, 255, 255, 0.705);">No account yet? Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer 영역 -->
+        <div id="footerContainer">
+            <h3>회사 소개</h3>
+            <h3>이용약관</h3>
+            <h3>개인정보처리방침</h3>
+            <h3>환불정책</h3>
+            <h3>사업자정보확인</h3>
+            <h3>청소년보호정책</h3>
+        </div>
+    </div>
+</body>
+
+</html>
