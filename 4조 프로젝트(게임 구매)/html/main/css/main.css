@@ -1,0 +1,140 @@
+/* slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-bottom: 3px solid #CB863D;
+    /* 지워도 무관 */
+    background: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+}
+
+
+/* main contents */
+.content {
+    position: relative;
+    display: flex;
+    height: 100%;
+    background: #3A342E;
+    color: #fff;
+}
+
+/* board */
+.board {
+    position: relative;
+    min-height: 100%;
+    max-width: 300px;
+    flex: 1;
+    background: #262322;
+    border-right: 2px solid #CB863D;
+}
+
+.boardSec {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+.boardSec>span {
+    display: block;
+    min-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #CB863D;
+    background: #1b1918;
+}
+
+
+
+.boardList {
+    position: relative;
+}
+
+.boardList>li {
+    list-style: disc inside;
+    min-height: 50px;
+    padding: 0 25px;
+}
+
+.boardList>li>a {
+    color: #fff;
+}
+
+/* subSlider */
+.subSlider {
+    position: relative;
+    flex: 3;
+}
+
+.subSliderSec {
+    position: relative;
+    min-height: 325px;
+}
+
+.subStxt {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    border-bottom: 1px solid #CB863D;
+    background: #262322;
+    transition: ease-out 0.3s;
+}
+
+.subStxt:hover {
+    background: #1b1918;
+}
+
+.subStxt span {
+    padding: 0 35px;
+    color: #fff;
+}
+
+.subSimg {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.subSimg>div {
+    width: 250px;
+    height: 200px;
+    margin-top: 15px;
+    background: #CB863D;
+}
+
+/* 1260px 반응형 */
+@media (max-width : 1260px) {
+
+    .pagew {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .board {
+        max-width: none;
+        width: 100%;
+        border-bottom: 2px solid #CB863D;
+    }
+
+    .boardSec {
+        margin-bottom: 0;
+    }
+
+    .boardList {
+        padding: 15px 0 ;
+    }
+}

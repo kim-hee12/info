@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1918;
+    height: 100px;
+    margin-top: auto;
+}
+
+.fList {
+    position: relative;
+}
+
+.fList ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.fList>ul>li>a {
+    color: #fff;
+}
+
+.fList>ul>li>a:hover {
+    transition: ease-out 0.3s;
+    color: #CB863D;
+}
+

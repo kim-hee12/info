@@ -1,0 +1,389 @@
+.header {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 150px;
+    background: #0f0f10;
+    z-index: 999;
+    padding: 0 15px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: end;
+    width: 385px;
+    height: 100%;
+}
+
+.logo>a>img {
+    height: 150px;
+}
+
+.hNav {
+    position: relative;
+    display: flex;
+    flex: 3;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    width: 950px;
+}
+
+
+.hNav>li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.hNav>li>.material-symbols-outlined {
+    position: absolute;
+    right: 10%;
+    line-height: 50px;
+}
+
+.hNav>li:nth-child(n+3):hover .material-symbols-outlined {
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+.hNav>li>a {
+    color: #fff;
+}
+
+.hNav>li>span {
+    transition: all 0.3s;
+}
+
+.hNav>li:nth-child(n+3):hover {
+    box-shadow: 0 1px inset #cb863d;
+    color: #cb863d;
+}
+
+.hNav>li:nth-child(n+3):hover .smallList {
+    transition: all 0.3s;
+    visibility: visible;
+}
+
+.smallList {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    width: 100%;
+    padding-top: 5px;
+    background: #1d1d21;
+    z-index: 999;
+}
+
+.smallList>li {
+    height: 50px;
+    padding: 10px 5px;
+    border-bottom: 2px solid #cb863d;
+    border-radius: 5px 5px 0 0;
+}
+
+.smallList>li>a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.smallList>li>a:hover {
+    color: #cb863d;
+    transition: 0.2s;
+}
+
+.hSearch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    margin: 0 15px 0 10px;
+}
+
+.hSearchBar {
+    position: relative;
+    width: 270px;
+}
+
+.hSearchBar form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hSearchBar form input {
+    width: 100%;
+    height: 50px;
+    background: #f2f4f8;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px 0 50px;
+}
+
+.hSearchBar form img {
+    position: absolute;
+    display: block;
+    margin-left: 15px;
+}
+
+.sign {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+}
+
+.sign>img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.account {
+    position: relative;
+    width: 120px;
+    color: #fff;
+}
+
+.acSort {
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.acSort>span {
+    transition: all 0.3s;
+}
+
+.acSort .material-symbols-outlined {
+    position: absolute;
+    line-height: 50px;
+}
+
+.account:hover .acSort {
+    box-shadow: 0 1px inset #cb863d;
+    border-radius: 5px;
+}
+
+.account:hover .material-symbols-outlined {
+    transform: rotate(90deg);
+}
+
+.account:hover .acList {
+    visibility: visible;
+}
+
+.acList {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    width: 100%;
+    background: #1d1d21;
+    padding: 10px 0;
+}
+
+.acList>li {
+    margin: 10px 0;
+}
+
+.acList>li>a {
+    color: #fff;
+}
+
+.acList>li>a:hover {
+    color: #cb863d;
+    transition: all 0.3s;
+}
+
+/* 1120width이하 메뉴 */
+.hamMenu {
+    position: relative;
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamMenu:hover{
+    background: #CB863D;
+    transition: all 0.2s;
+}
+
+.hamMenu:hover .hamList {
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+.hamMenuIcon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hamMenuIcon>img {
+    width: 50px;
+    height: 50px;
+}
+
+.hamList {
+    position: absolute;
+    visibility: hidden;
+    width: 30vw;
+    /* 스크롤바 너비만큼 left 수정필요 */
+    left: calc(-30vw + 100%);
+    height: 500px;
+    background: #262322;
+}
+
+.hamSearch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 399px;
+    border-bottom: 1px solid #CB863D;
+}
+
+.hamSearch form {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid #CB863D;
+}
+
+.hamSearch form input {
+    width: 100%;
+    height: 50px;
+    background: #f2f4f8;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px 0 50px;
+}
+
+.hamSearch form img {
+    position: absolute;
+    display: block;
+    margin-left: 15px;
+}
+
+.searchResult {
+    position: relative;
+    flex: 3;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.result {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.resultImg {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+}
+
+.resultName {
+    color: #fff;
+}
+
+.hamSign {
+    position: relative;
+    display: flex;
+    height: 85px;
+}
+
+.hamProfile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    height: 100%;
+    border-right: 1px solid #CB863D;
+}
+
+.hamProfile>img {
+    width: 50px;
+    height: 50px;
+}
+
+.hamProfile>span {
+    margin-left: 25px;
+    color: #fff;
+}
+
+.signbtn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.signbtn>img {
+    width: 50px;
+    height: 50px;
+}
+
+/* 1260width 반응형 */
+@media (max-width: 1260px) {
+    .sign>img {
+        display: none;
+    }
+    .sign {
+        justify-content: center;
+    }
+}
+
+/* 1120width 반응형 */
+@media (max-width: 1120px) {
+    .hSearch,.sign {
+        display: none;
+    }
+
+    .hamMenu {
+        display: block;
+    }
+}
+
+@media(min-width: 1121px) {
+    .hamMenu {
+        display: none;
+    }
+}
+
+

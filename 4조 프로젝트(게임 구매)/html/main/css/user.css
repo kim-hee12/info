@@ -1,0 +1,119 @@
+.userContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.login-form {
+    height: 100%;
+    border-top: 1PX solid goldenrod;
+}
+
+.id {
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+.id>input{
+    height: 65px;
+    width: 100%;
+}
+.email {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.email>input{
+    height: 65px;
+    width: 610px;
+}
+.email>button{
+    width: 80px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.password {
+    margin-bottom: 50px;
+}
+.password>input{
+    height: 65px;
+    width: 100%;
+}
+.password>ul>li{
+    color: white;
+    list-style: none;
+}
+
+.pw-check {
+    margin-bottom: 50px;
+}
+.pw-check>input{
+    height: 65px;
+    width: 100%;
+}
+.log-in-btn {
+    margin-bottom: 50px;
+}
+.log-in-btn>a{
+    height: 65px;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    border-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in-link-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid goldenrod;
+    gap: 30px;
+}
+
+.log-in-link-btn>input{
+    height: 65px;
+    width: 610px;
+    background-color: black;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.log-in-link-btn>input:first-child{
+    border-color: blue;
+    color: blue;
+}
+.log-in-link-btn>input:last-child{
+    border-color: yellow;
+    color: yellow;
+}
+.a {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 30px
+
+}
+
+.b {
+    margin-top: 12px;
+    font-size: 1.2rem;
+}
+.b>a{
+    color: cornflowerblue;
+}
+
+.email>button {
+    position: absolute;
+    border-radius: 15px;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0px;
+}
