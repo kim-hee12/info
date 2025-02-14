@@ -1,0 +1,82 @@
+.loginContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    height: 100%;
+    border-top: 1px solid goldenrod;
+}
+.id>input{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 65px;
+    width: 100%;
+}
+.password{
+    margin-bottom: 50px;
+}
+.password>input{
+    height: 65px;
+    width: 100%;
+}
+.password>a{
+    color: royalblue;
+}
+.log-in-btn{
+    margin-bottom: 50px;
+}
+.log-in-link-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid goldenrod;
+    gap: 30px;
+}
+.log-in-link-btn>input{
+    height: 65px;
+    width: 610px;
+    background-color: black;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.log-in-link-btn>input:first-child{
+    border-color: blue;
+    color: blue;
+}
+.log-in-link-btn>input:last-child{
+    border-color: yellow;
+    color: yellow;
+}
+.a{
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: white;
+    
+}
+.b{
+    margin-top: 12px;
+}
+.b>a{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.705);
+}
+.log-in-btn>a{
+    height: 65px;
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    border-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
