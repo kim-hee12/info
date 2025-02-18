@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            height: 500px;
+        }
+        table, td{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" id="rownum" placeholder="행의 개수 입력" style="width: 200px;">
+    <input type="number" id="colnum" placeholder="열의 개수 입력" style="width: 200px;">
+    <button onclick="makemap(rownum.value,colnum.value)">생성</button>
+    <hr>
+
+    <table id="tbl">
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <script>
+        function makemap(a1,a2){
+      var tag = "<table border='1'>";
+      var b1 = parseInt(a1);
+      var b2 = parseInt(a2);
+      for (j = 1; j <= b1; j++) {
+        tag += "<tr>";
+        for (i = 1; i <= b2; i++) {
+          tag += "<td>"+j+"."+i+"</td>";
+
+        }
+        tag += "</tr>";
+      }
+      tag += "</table>";
+      tbl.innerHTML = tag;
+    }
+    
+    </script>
+</body>
+
+</html>
