@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        div {
+            width: 800px;
+            height: 500px;
+            border: 1px solid;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        let data = {
+
+            labels: ['Red', 'Orange', 'Yellow', 'Green', 'blue', 'navy'],
+            datasets: [{
+                // label: 'TEST_SABEL',
+                // data: [12, 19, 3, 5, 2, 3],
+                // borderWidth: 1
+                // backgroundColor :[
+                //     'red','orange','yellow','green','blue','navy'
+                // ],
+                // borderColor:[
+                //     'red','orange','yellow','green','blue','navy'
+                // ],
+            },
+            {
+                label: 'RED',
+                data: [12, 0, 0, 0, 0, 0],
+                borderWidth: 1,
+                backgroundColor: 'red',
+                borderColor: 'black',
+            },
+            {
+                label: 'ORANGE',
+                data: [0, 55, 0, 0, 0, 0],
+                borderWidth: 1,
+                backgroundColor: 'orange',
+                borderColor: 'black',
+            },
+            {
+                label: 'YELLOW',
+                data: [0, 0, 36, 0, 0, 0],
+                borderWidth: 1,
+                backgroundColor: 'yellow',
+                borderColor: 'black',
+            },
+            {
+                label: 'GREEN',
+                data: [0, 0, 0, 14, 0, 0],
+                borderWidth: 1,
+                backgroundColor: 'green',
+                borderColor: 'black',
+            },
+            {
+                label: 'BLUE',
+                data: [0, 0, 0, 0, 28, 0],
+                borderWidth: 1,
+                backgroundColor: 'blue',
+                borderColor: 'black',
+            },
+            {
+                label: 'NAVY',
+                data: [0, 0, 0, 0, 0, 79],
+                borderWidth: 1,
+                backgroundColor: 'navy',
+                borderColor: 'black',
+            },
+            ]
+        };
+        let options = {
+
+            animations : {
+
+                // line 차트에만 해당
+
+                // tension : {
+                //     duration : 3000,
+                //     easing : 'linear',
+                //     from : 1,
+                //     to : 0,
+                //     loop : true,
+                // }
+
+                // bar 에만 적용
+
+                y : {
+                    duration : 1000,
+                    easing : 'linear',
+                    // from : 0,
+                    // to : 1,
+                    loop : false,
+                }
+            },
+
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    // max : 100,
+                    // min : 0 ,
+                    // ticks : {
+                    //     stepSize : 10
+                    // }
+                },
+                x : {
+                    stacked : true,
+                    barPercentage : 1.0,
+                    categoryPercentage : 1.0
+                }
+            },
+            onClick : (event,chartEl)=>{
+                console.log('clicked..',chartEl);
+
+            }
+
+        };
+
+        new Chart(ctx, {
+            type: 'bar', // bar, line, pie, doughnut, // bubble, scatter, heatmap 
+            data: data,
+            options: options
+        });
+    </script>
+
+</body>
+
+</html>
