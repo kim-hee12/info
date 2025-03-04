@@ -191,6 +191,48 @@ public class C02While {
 			}
 		System.out.println();		 
 		i++;
+
+
+
+
+	`// 별 찍기 (모래시계)
+		
+
+		int i = 0;
+		while (i < 7) {
+			
+		if (i < 4) {
+
+				int j = 0;
+				while (j < i ) {
+					System.out.print(" ");
+					j++;
+				}
+
+				int k = 0;
+				while (k <= 6 - 2 * i) {
+					System.out.print("*");
+					k++;
+				}
+
+			}
+
+			else{
+				int j = 0;
+				while (j < 6 - i) {
+					System.out.print(" ");
+					j++;
+				}
+				int k = 0;
+				while (k <= 2 * i-6) {
+					System.out.print("*");
+					k++;
+				}
+
+			}
+			
+			System.out.println();
+			i++;
 			
 	}
 			
