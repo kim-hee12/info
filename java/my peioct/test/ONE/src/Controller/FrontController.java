@@ -1,0 +1,34 @@
+package Controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class FrontController {
+	// 서브컨트롤러 저장 자료구조("/endpoint":서브컨트롤러객체)
+		private Map<String,Controller> map = new HashMap<>();
+		
+		// 싱글톤
+		private static FrontController instance;
+		private FrontController() {
+			System.out.println("[FC] FrontController init..");
+			init();
+		}
+		public static FrontController getInstance() {
+			if(instance==null)
+				instance = new FrontController();
+			return instance;
+		}
+		// 초기화
+		private void init() {		
+			// 도서요청 API
+			map.put("/book", new BookController());
+		}
+		
+		// View로부터 전달하는 요청 처리
+		public Map<String, Object> execute(Map<String,Object>params){
+			System.out.println("[FC] execute invoke..");
+			String endPoint = (String)params.get("endPoint");
+			Controller controller = map.get(endPoint);
+			return controller.execute(params);
+		}
+}
